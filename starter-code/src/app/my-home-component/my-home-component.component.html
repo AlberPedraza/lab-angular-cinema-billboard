@@ -1,3 +1,12 @@
 <p>
-  my-home-component works!
+  my-home
 </p>
+
+<div class="film" *ngFor="let e of myHomeGetMovies()">
+  <ul class="">
+    <li>Room {{e.id}}</li>
+    <li><img src="{{e.poster}}" alt="" width="200"></li>
+    <li>{{e.title}}</li>
+  </ul>
+
+</div>
