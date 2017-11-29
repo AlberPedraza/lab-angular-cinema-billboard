@@ -1,7 +1,10 @@
-<h3>
+<!-- <h3>
     Film: {{ movieId }}
-  </h3>
+  </h3> -->
+  <div class="container">
+
   <div class="film" *ngFor="let e of myMovie(movieId)">
+    <a [routerLink]="['/home']"> home </a>
     <ul>
       <li><h2>{{e.title}}</h2></li>
       <li><img src="{{e.poster}}" alt="" width="200"></li>
@@ -14,4 +17,4 @@
 
   </div>
 
-  <a [routerLink]="['/home']"> home </a>
+</div>

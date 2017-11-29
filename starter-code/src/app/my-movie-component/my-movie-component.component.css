@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+  flex-wrap:wrap;
+
+  font-size:
+}
+.film{
+width: 400px;
+}
+.film ul{
+list-style: none;
+}
+.film ul li{
+  padding: 15px 5px;
+}
