@@ -23,7 +23,11 @@ getMovies(){
   return listMovies;
 };
 getMovie(id:number){
-
+  for(let i = 0; i < listMovies.length;i++){
+    if (id == listMovies[i].id){
+    return [listMovies[i]];
+    }
+  }
 };
     // increment() {
     //     this.count++;

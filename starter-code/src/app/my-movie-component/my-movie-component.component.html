@@ -1,12 +1,17 @@
-<p>
-  Profile
-</p>
+<h3>
+    Film: {{ movieId }}
+  </h3>
+  <div class="film" *ngFor="let e of myMovie(movieId)">
+    <ul>
+      <li><h2>{{e.title}}</h2></li>
+      <li><img src="{{e.poster}}" alt="" width="200"></li>
+      <li><strong>Genre:</strong> {{e.genre}}</li>
+      <li><strong>Year:</strong> {{e.year}}</li>
+      <li><strong>Director:</strong> {{e.director}}</li>
+      <li><strong>Actors:</strong> {{e.actors}}</li>
+      <li><strong>synopsis:</strong> {{e.synopsis}}</li>
+    </ul>
 
-<div class="film-item" *ngFor="let e of myHomeGetMovies()">
-  <ul class="">
-    <li>Room {{e.id}}</li>
-    <li><img src="{{e.poster}}" alt="" width="200"></li>
-    <li>{{e.title}}</li>
-  </ul>
+  </div>
 
-</div>
+  <a [routerLink]="['/home']"> home </a>

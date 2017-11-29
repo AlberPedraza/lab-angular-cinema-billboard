@@ -1,5 +1,7 @@
-.film{
+.container{
   display: flex;
   flex-wrap:wrap;
-
+}
+.film{
+width: 300px; 
 }
